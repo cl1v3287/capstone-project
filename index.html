@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strong password generator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap');
+        </style>
+</head>
+
+<body>
+    <h1>Strong Password Generator</h1>
+
+    
+    <form action="./generate.php" method="post">
+        
+        <label>Choose a password length:</label><br>
+    <select name="password-length" id="password-length">
+        <option value="6">6 (Weak)</option>
+        <option value="8">8 (Medium)</option>
+        <option value="10">10 (Strong)</option>
+    </select>
+<br><br>
+        <!-- <input type="text" value -->
+        <input type="submit" value="Generate Password">
+    <form>
+    <div id="password"></div>
+
+</body>
+</html>
